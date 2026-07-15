@@ -23,7 +23,7 @@ GoF patterns are organized into three groups:
 | Pattern | Purpose |
 | --- | --- |
 | [Singleton](src/main/java/com/designpatterns/creational/singleton) | Ensures that a class has only one instance and provides a global access point to it. |
-| Factory Method | Defines an interface for creating an object while allowing subclasses to choose its concrete type. |
+| [Factory Method](src/main/java/com/designpatterns/creational/factorymethod) | Defines an interface for creating an object while allowing subclasses to choose its concrete type. |
 | Abstract Factory | Creates families of related objects without specifying their concrete classes. |
 | Builder | Constructs a complex object step by step, independently of its representation. |
 | Prototype | Creates new objects by copying an existing prototype. |
