@@ -3,24 +3,39 @@
 The **Singleton** is a creational pattern that ensures a class has only one
 instance and provides a global access point to it.
 
-## Example Structure
+## Examples
+
+This package contains eager and lazy initialization examples.
+
+### Eager Singleton
 
 - `Singleton.java`: contains the single instance, private constructor, and
   `getInstance()` method.
 - `Main.java`: retrieves the instance twice and demonstrates that both
   references point to the same object.
 
-## How It Works
+The instance is stored in a `private static final` field and is created when the
+class is initialized. This implementation is simple and thread-safe.
 
-This example has three key elements:
+### Lazy Singleton
+
+- `LazySingleton.java`: creates its instance only when `getInstance()` is called
+  for the first time.
+- `LazySingletonMain.java`: demonstrates the delayed creation and confirms that
+  subsequent calls return the same object.
+
+The lazy implementation uses a `synchronized` factory method. This makes the
+basic example thread-safe by allowing only one thread at a time to perform the
+null check and create the instance.
+
+## Key Elements
+
+Both examples have three key elements:
 
 1. The constructor is `private`, preventing the use of `new Singleton()` outside
    the class itself.
-2. The instance is stored in a `private static final` field.
+2. The instance is stored in a private static field.
 3. The public `getInstance()` method always returns the same instance.
-
-Because the instance is created when the class is initialized, this
-implementation is simple and thread-safe.
 
 ## Run the Example
 
@@ -40,6 +55,21 @@ Expected output:
 
 ```text
 Hello! I am the single Singleton instance.
+Do both variables reference the same instance? true
+```
+
+Run the lazy example:
+
+```bash
+java -cp out com.designpatterns.creational.singleton.LazySingletonMain
+```
+
+Expected output:
+
+```text
+Before the first getInstance() call.
+Creating the LazySingleton instance.
+Hello! I am the lazy Singleton instance.
 Do both variables reference the same instance? true
 ```
 
