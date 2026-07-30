@@ -26,7 +26,7 @@ GoF patterns are organized into three groups:
 | [Factory Method](src/main/java/com/designpatterns/creational/factorymethod) | Defines an interface for creating an object while allowing subclasses to choose its concrete type. |
 | [Abstract Factory](src/main/java/com/designpatterns/creational/abstractfactory) | Creates families of related objects without specifying their concrete classes. |
 | [Builder](src/main/java/com/designpatterns/creational/builder) | Constructs a complex object step by step, independently of its representation. |
-| Prototype | Creates new objects by copying an existing prototype. |
+| [Prototype](src/main/java/com/designpatterns/creational/prototype) | Creates new objects by copying an existing prototype. |
 
 ## Structural Patterns
 
