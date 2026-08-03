@@ -32,7 +32,7 @@ GoF patterns are organized into three groups:
 
 | Pattern | Purpose |
 | --- | --- |
-| Adapter | Converts one interface into another interface expected by a client. |
+| [Adapter](src/main/java/com/designpatterns/structural/adapter) | Converts one interface into another interface expected by a client. |
 | Bridge | Separates an abstraction from its implementation so both can evolve independently. |
 | Composite | Represents part-whole hierarchies and treats individual objects and compositions uniformly. |
 | Decorator | Adds responsibilities to an object dynamically without changing its class. |
