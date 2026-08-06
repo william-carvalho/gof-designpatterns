@@ -6,7 +6,6 @@ package com.designpatterns.creational.prototype;
 public class Document implements Prototype<Document> {
 
     private String title;
-    
     private String content;
     private String format;
 
