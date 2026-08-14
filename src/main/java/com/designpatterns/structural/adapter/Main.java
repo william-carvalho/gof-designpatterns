@@ -6,8 +6,6 @@ public class Main {
         LegacyPaymentGateway legacyGateway = new LegacyPaymentGateway();
         PaymentProcessor paymentProcessor =
                 new PaymentGatewayAdapter(legacyGateway);
-
-                
         paymentProcessor.pay(25.99);
     }
 }
