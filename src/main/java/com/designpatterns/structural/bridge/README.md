@@ -3,6 +3,7 @@
 The **Bridge** is a structural design pattern that separates an abstraction
 from its implementation so both can change independently.
 
+
 This basic example separates remote controls from the devices they operate. A
 remote can work with either a television or a radio without inheriting from
 those device classes.
