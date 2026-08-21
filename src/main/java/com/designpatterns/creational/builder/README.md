@@ -62,3 +62,29 @@ Use Builder when an object has several construction options, especially when
 many parameters are optional or when the creation process should be separate
 from the final object. For very small objects with only a few required values, a
 regular constructor may be simpler.
+
+## Advantages
+
+- Makes construction with many optional values readable
+- Avoids telescoping constructors and unclear parameter ordering
+- Can validate configuration before creating an immutable result
+- Allows the same construction process to produce different configurations
+
+## Disadvantages
+
+- Adds a separate builder type and extra construction code
+- Can duplicate fields between the builder and the product
+- Is unnecessary for objects with only a few simple parameters
+
+## Common Use Cases
+
+- Immutable value objects with optional fields
+- Configuration, query, request, and response objects
+- Complex objects assembled through multiple ordered steps
+
+## Considerations
+
+- Make required values explicit and provide sensible optional defaults
+- Validate invalid combinations in `build()`
+- Decide whether a builder may be reused after creating an object
+- Defensively copy mutable values when the resulting object must be immutable

@@ -63,3 +63,28 @@ Legacy gateway processed 2599 cents.
 Use Adapter when existing code has useful behavior but its interface does not
 match what the client expects. It is commonly used with legacy code, external
 libraries, and services that use different data formats or method signatures.
+
+## Advantages
+
+- Reuses existing code without modifying it
+- Keeps translation logic out of the client
+- Isolates clients from third-party or legacy interfaces
+
+## Disadvantages
+
+- Adds an extra layer of indirection
+- Can become complex when interfaces differ significantly
+- May hide limitations or unusual behavior of the adapted service
+
+## Common Use Cases
+
+- Integrating legacy APIs and third-party libraries
+- Converting data formats, units, or method signatures
+- Wrapping external services behind an application-owned interface
+
+## Considerations
+
+- Keep the adapter focused on interface and data translation
+- Define how conversion errors, precision, and unsupported operations are handled
+- Prefer composition when the adaptee is an existing object or external class
+- Do not place unrelated business rules inside the adapter

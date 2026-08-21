@@ -62,3 +62,28 @@ Use Abstract Factory when an application must work with multiple families of
 related products and products from the same family should be used together. It
 is especially useful when the client must remain independent of concrete
 product classes.
+
+## Advantages
+
+- Ensures that products created together belong to a compatible family
+- Isolates clients from concrete classes and construction details
+- Makes switching an entire product family straightforward
+
+## Disadvantages
+
+- Introduces several interfaces and concrete factory classes
+- Adding a new product type requires changing every factory implementation
+- Can be excessive when there is only one product family
+
+## Common Use Cases
+
+- Cross-platform user-interface component families
+- Database drivers and related persistence components
+- Theme, cloud-provider, or operating-system-specific services
+
+## Considerations
+
+- Define one creation method for each product that belongs to the family
+- Keep products from different families compatible at the abstraction level
+- Use Factory Method when only one product varies
+- Consider dependency injection for selecting the concrete factory at startup

@@ -68,3 +68,28 @@ mutable object should also be copied when an independent deep copy is required.
 Use Prototype when creating an object is expensive or complicated and new
 objects usually begin with the same configuration as an existing one. A normal
 constructor or factory is often simpler when object creation is inexpensive.
+
+## Advantages
+
+- Reuses an existing configuration without repeating complex setup
+- Creates new variants without depending on concrete constructors
+- Can reduce the cost of repeatedly initializing expensive objects
+
+## Disadvantages
+
+- Copying nested mutable objects can be difficult
+- Copy behavior may become outdated when new fields are added
+- Shared references in shallow copies can cause unexpected changes
+
+## Common Use Cases
+
+- Templates for documents, messages, or graphical objects
+- Preconfigured objects that need small variations
+- Objects whose initial state is expensive to calculate or load
+
+## Considerations
+
+- Clearly define whether `copy()` performs a shallow or deep copy
+- Copy every mutable nested value when independent state is required
+- Test that modifying a copy does not unexpectedly change its prototype
+- Prefer explicit copy constructors or methods when they make the rules clearer

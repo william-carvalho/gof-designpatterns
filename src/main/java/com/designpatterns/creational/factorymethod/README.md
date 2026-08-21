@@ -58,3 +58,28 @@ Sending SMS: Your verification code is 1234.
 Use Factory Method when a parent class should define a common workflow while
 subclasses decide which concrete product that workflow uses. It is useful when
 creation logic is expected to vary or grow over time.
+
+## Advantages
+
+- Decouples product creation from the code that uses the product
+- Supports new product variants through new creator subclasses
+- Keeps a common workflow in the base creator
+
+## Disadvantages
+
+- Adds a creator hierarchy alongside the product hierarchy
+- Can produce many small classes for simple creation logic
+- Clients may still need to choose a concrete creator
+
+## Common Use Cases
+
+- Framework extension points implemented by subclasses
+- Parsers, exporters, notifications, and document creators
+- Selecting platform-specific or environment-specific products
+
+## Considerations
+
+- Use a simple factory when subclass-based customization is unnecessary
+- Return abstractions rather than concrete product types
+- Keep shared workflow separate from product-specific construction
+- Avoid adding a creator subclass when a constructor or supplier is clearer

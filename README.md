@@ -34,7 +34,7 @@ GoF patterns are organized into three groups:
 | --- | --- |
 | [Adapter](src/main/java/com/designpatterns/structural/adapter) | Converts one interface into another interface expected by a client. |
 | [Bridge](src/main/java/com/designpatterns/structural/bridge) | Separates an abstraction from its implementation so both can evolve independently. |
-| Composite | Represents part-whole hierarchies and treats individual objects and compositions uniformly. |
+| [Composite](src/main/java/com/designpatterns/structural/composite) | Represents part-whole hierarchies and treats individual objects and compositions uniformly. |
 | Decorator | Adds responsibilities to an object dynamically without changing its class. |
 | Facade | Provides a simple interface to a complex subsystem. |
 | Flyweight | Shares reusable object state to efficiently support many fine-grained objects. |
@@ -130,6 +130,35 @@ Use patterns as design tools, not rigid rules. Start with the problem you need t
 solve, keep the implementation as simple as possible, and introduce a pattern
 only when its flexibility or separation of responsibilities provides a clear
 benefit.
+
+## Advantages
+
+- Provides a shared vocabulary for communicating common design solutions
+- Encourages loose coupling, encapsulation, and separation of concerns
+- Offers proven structures that can improve extensibility and maintainability
+- Makes recurring design decisions easier to recognize and discuss
+
+## Disadvantages
+
+- Can add unnecessary classes, interfaces, and indirection
+- May make a simple solution harder to understand when applied prematurely
+- Does not replace analysis of the specific problem and its constraints
+- Can be misused when developers focus on pattern names instead of design goals
+
+## Common Use Cases
+
+- Managing object creation and configuration
+- Integrating incompatible components or third-party systems
+- Building object hierarchies and flexible compositions
+- Coordinating communication, state changes, and interchangeable behavior
+
+## Considerations
+
+- Prefer the simplest design that satisfies the current requirements
+- Evaluate the trade-offs of a pattern in the context of the application
+- Keep examples and production implementations compatible with their intended
+  concurrency, performance, and testing requirements
+- Refactor toward a pattern when recurring variation makes its benefits clear
 
 ## References
 

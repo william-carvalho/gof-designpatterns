@@ -69,3 +69,28 @@ Use Bridge when a class has two independent dimensions that would otherwise
 create many subclasses, such as several remote types combined with several
 device types. The pattern is most useful when both dimensions are expected to
 change independently.
+
+## Advantages
+
+- Allows abstractions and implementations to evolve independently
+- Avoids a large subclass hierarchy for every possible combination
+- Selects or replaces an implementation through composition
+
+## Disadvantages
+
+- Adds interfaces, delegation, and conceptual indirection
+- Can make a small design harder to follow
+- Requires identifying the independent dimensions correctly
+
+## Common Use Cases
+
+- Cross-platform abstractions backed by platform-specific implementations
+- User-interface controls connected to different rendering systems
+- Remote controls, database drivers, and messaging providers
+
+## Considerations
+
+- Introduce Bridge when both dimensions have meaningful independent variation
+- Keep implementation details behind a stable implementation interface
+- Inject the implementation instead of constructing it inside the abstraction
+- Avoid the pattern when a single implementation is unlikely to change

@@ -78,3 +78,29 @@ Do both variables reference the same instance? true
 Singleton can be useful when exactly one instance must coordinate a shared
 resource. Use it carefully because global access can increase coupling and make
 testing more difficult.
+
+## Advantages
+
+- Guarantees one shared instance through a controlled access point
+- Can delay resource creation when lazy initialization is used
+- Keeps instance-creation logic inside the class
+
+## Disadvantages
+
+- Introduces global state and can hide dependencies
+- Can make isolated unit tests and lifecycle management more difficult
+- Requires special care to remain safe under concurrent access
+
+## Common Use Cases
+
+- Application configuration shared across components
+- Logging or caching services with one coordinated instance
+- Managers for a single process-wide resource
+
+## Considerations
+
+- Prefer dependency injection when a normal shared service is sufficient
+- Select eager or lazy initialization based on resource cost and usage
+- Account for threads, serialization, reflection, and class loaders in
+  production implementations
+- Keep the Singleton free of unnecessary mutable state
