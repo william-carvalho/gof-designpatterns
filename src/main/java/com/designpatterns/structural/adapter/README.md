@@ -72,6 +72,7 @@ libraries, and services that use different data formats or method signatures.
 
 ## Disadvantages
 
+
 - Adds an extra layer of indirection
 - Can become complex when interfaces differ significantly
 - May hide limitations or unusual behavior of the adapted service
