@@ -36,7 +36,7 @@ GoF patterns are organized into three groups:
 | [Bridge](src/main/java/com/designpatterns/structural/bridge) | Separates an abstraction from its implementation so both can evolve independently. |
 | [Composite](src/main/java/com/designpatterns/structural/composite) | Represents part-whole hierarchies and treats individual objects and compositions uniformly. |
 | [Decorator](src/main/java/com/designpatterns/structural/decorator) | Adds responsibilities to an object dynamically without changing its class. |
-| Facade | Provides a simple interface to a complex subsystem. |
+| [Facade](src/main/java/com/designpatterns/structural/facade) | Provides a simple interface to a complex subsystem. |
 | Flyweight | Shares reusable object state to efficiently support many fine-grained objects. |
 | Proxy | Provides a substitute that controls access to another object. |
 
