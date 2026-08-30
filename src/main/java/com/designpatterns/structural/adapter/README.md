@@ -35,6 +35,7 @@ Client -> PaymentProcessor -> PaymentGatewayAdapter
                             LegacyPaymentGateway
 ```
 
+
 The client does not need to know the legacy method name or perform the currency
 conversion itself.
 
