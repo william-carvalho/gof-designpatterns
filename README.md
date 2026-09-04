@@ -38,7 +38,7 @@ GoF patterns are organized into three groups:
 | [Decorator](src/main/java/com/designpatterns/structural/decorator) | Adds responsibilities to an object dynamically without changing its class. |
 | [Facade](src/main/java/com/designpatterns/structural/facade) | Provides a simple interface to a complex subsystem. |
 | [Flyweight](src/main/java/com/designpatterns/structural/flyweight) | Shares reusable object state to efficiently support many fine-grained objects. |
-| Proxy | Provides a substitute that controls access to another object. |
+| [Proxy](src/main/java/com/designpatterns/structural/proxy) | Provides a substitute that controls access to another object. |
 
 ## Behavioral Patterns
 
