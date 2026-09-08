@@ -44,7 +44,7 @@ GoF patterns are organized into three groups:
 
 | Pattern | Purpose |
 | --- | --- |
-| Chain of Responsibility | Passes a request through a chain of handlers until one handles it. |
+| [Chain of Responsibility](src/main/java/com/designpatterns/behavioral/chainofresponsibility) | Passes a request through a chain of handlers until one handles it. |
 | Command | Encapsulates a request as an object. |
 | Interpreter | Defines a grammar and an interpreter for a simple language. |
 | Iterator | Traverses a collection without exposing its internal representation. |
