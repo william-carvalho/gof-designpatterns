@@ -4,6 +4,7 @@ The **Proxy** is a structural design pattern that provides a substitute for
 another object and controls access to it through the same interface.
 
 This basic example uses a virtual proxy to delay loading an image until the
+
 client displays it for the first time.
 
 ## Example Structure
