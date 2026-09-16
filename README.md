@@ -46,7 +46,7 @@ GoF patterns are organized into three groups:
 | --- | --- |
 | [Chain of Responsibility](src/main/java/com/designpatterns/behavioral/chainofresponsibility) | Passes a request through a chain of handlers until one handles it. |
 | [Command](src/main/java/com/designpatterns/behavioral/command) | Encapsulates a request as an object. |
-| Interpreter | Defines a grammar and an interpreter for a simple language. |
+| [Interpreter](src/main/java/com/designpatterns/behavioral/interpreter) | Defines a grammar and an interpreter for a simple language. |
 | Iterator | Traverses a collection without exposing its internal representation. |
 | Mediator | Centralizes communication between related objects to reduce direct dependencies. |
 | Memento | Captures and restores an object's internal state without breaking encapsulation. |
