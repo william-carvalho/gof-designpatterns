@@ -49,7 +49,7 @@ GoF patterns are organized into three groups:
 | [Interpreter](src/main/java/com/designpatterns/behavioral/interpreter) | Defines a grammar and an interpreter for a simple language. |
 | [Iterator](src/main/java/com/designpatterns/behavioral/iterator) | Traverses a collection without exposing its internal representation. |
 | [Mediator](src/main/java/com/designpatterns/behavioral/mediator) | Centralizes communication between related objects to reduce direct dependencies. |
-| Memento | Captures and restores an object's internal state without breaking encapsulation. |
+| [Memento](src/main/java/com/designpatterns/behavioral/memento) | Captures and restores an object's internal state without breaking encapsulation. |
 | Observer | Notifies dependent objects automatically when another object changes state. |
 | State | Changes an object's behavior when its internal state changes. |
 | Strategy | Defines interchangeable algorithms and selects one at runtime. |
