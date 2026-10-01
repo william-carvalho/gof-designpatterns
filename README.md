@@ -52,7 +52,7 @@ GoF patterns are organized into three groups:
 | [Memento](src/main/java/com/designpatterns/behavioral/memento) | Captures and restores an object's internal state without breaking encapsulation. |
 | [Observer](src/main/java/com/designpatterns/behavioral/observer) | Notifies dependent objects automatically when another object changes state. |
 | [State](src/main/java/com/designpatterns/behavioral/state) | Changes an object's behavior when its internal state changes. |
-| Strategy | Defines interchangeable algorithms and selects one at runtime. |
+| [Strategy](src/main/java/com/designpatterns/behavioral/strategy) | Defines interchangeable algorithms and selects one at runtime. |
 | Template Method | Defines an algorithm's structure while allowing subclasses to customize individual steps. |
 | Visitor | Adds operations to an object structure without modifying its element classes. |
 
