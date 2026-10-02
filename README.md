@@ -53,7 +53,7 @@ GoF patterns are organized into three groups:
 | [Observer](src/main/java/com/designpatterns/behavioral/observer) | Notifies dependent objects automatically when another object changes state. |
 | [State](src/main/java/com/designpatterns/behavioral/state) | Changes an object's behavior when its internal state changes. |
 | [Strategy](src/main/java/com/designpatterns/behavioral/strategy) | Defines interchangeable algorithms and selects one at runtime. |
-| Template Method | Defines an algorithm's structure while allowing subclasses to customize individual steps. |
+| [Template Method](src/main/java/com/designpatterns/behavioral/templatemethod) | Defines an algorithm's structure while allowing subclasses to customize individual steps. |
 | Visitor | Adds operations to an object structure without modifying its element classes. |
 
 ## Project Structure
